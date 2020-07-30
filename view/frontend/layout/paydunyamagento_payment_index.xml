@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <head>
+        <script  src="https://code.jquery.com/jquery.min.js" src_type="url" />
+        <script  src="https://paydunya.com/assets/psr/js/psr.paydunya.min.js" src_type="url" />
+        <script  src="http://localhost/asset/config.js" src_type="url" />
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Paydunya\PaydunyaMagento\Block\PaydunyaMagento" name="paydunyamagento" template="Paydunya_PaydunyaMagento::paynow.phtml" cacheable="false"  >
+            </block>
+        </referenceContainer>
+    </body>
+</page>
